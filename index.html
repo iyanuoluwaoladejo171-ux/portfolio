@@ -1,0 +1,1176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Oladejo Iyanuoluwa Tobiloba | Senior Full-Stack & Systems Engineer
+    </title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <style>
+      :root {
+        --bg-dark: #121212;
+        --bg-surface: #1e1e1e;
+        --bg-surface-2: #2a2a2a;
+        --gold-accent: #ffc107;
+        --text-subtle: #a0a0a0;
+      }
+
+      body {
+        background-color: var(--bg-dark);
+        color: #e0e0e0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .bg-surface {
+        background-color: var(--bg-surface);
+      }
+      .bg-surface-2 {
+        background-color: var(--bg-surface-2);
+      }
+      .text-gold {
+        color: var(--gold-accent) !important;
+      }
+      .text-subtle {
+        color: var(--text-subtle);
+      }
+
+      .btn-gold {
+        background-color: var(--gold-accent);
+        color: #000;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+      .btn-gold:hover {
+        background-color: #e0a800;
+        color: #000;
+        transform: translateY(-2px);
+      }
+
+      .gold-line {
+        width: 45px;
+        height: 4px;
+        background-color: var(--gold-accent);
+        border-radius: 2px;
+      }
+
+      .hover-gold {
+        transition:
+          color 0.2s ease,
+          transform 0.2s ease;
+        display: inline-block;
+      }
+      .hover-gold:hover {
+        color: var(--gold-accent) !important;
+        transform: scale(1.15);
+      }
+
+      .avatar-img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border: 3px solid var(--gold-accent);
+      }
+
+      .project-card-img {
+        height: 190px;
+        object-fit: cover;
+        width: 100%;
+        transition: transform 0.4s ease;
+      }
+
+      .card:hover .project-card-img {
+        transform: scale(1.04);
+      }
+
+      .nav-pills .nav-link {
+        color: #a0a0a0;
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+      }
+      .nav-pills .nav-link.active,
+      .nav-pills .nav-link:hover {
+        background-color: var(--gold-accent) !important;
+        color: #000 !important;
+        font-weight: 600;
+      }
+
+      .timeline-dot {
+        position: absolute;
+        left: -21px;
+        top: 4px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--gold-accent);
+        box-shadow: 0 0 0 4px var(--bg-surface);
+      }
+
+      .map-responsive {
+        overflow: hidden;
+        padding-bottom: 50%;
+        position: relative;
+        height: 0;
+      }
+      @media (max-width: 768px) {
+        .map-responsive {
+          padding-bottom: 75%;
+        }
+      }
+      .map-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+
+      .tech-pill {
+        font-size: 0.72rem;
+        background-color: rgba(255, 193, 7, 0.12);
+        color: var(--gold-accent);
+        border: 1px solid rgba(255, 193, 7, 0.3);
+        padding: 0.2rem 0.55rem;
+        border-radius: 50rem;
+      }
+
+      /* High-Contrast Form Inputs for Dark Mode */
+.form-control-contrast {
+  background-color: #2b2b36 !important;
+  color: #ffffff !important;
+  border: 1px solid #4a4a5a !important;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-control-contrast::placeholder {
+  color: #b0b0c0 !important;
+  opacity: 1;
+}
+
+.form-control-contrast:focus {
+  background-color: #323242 !important;
+  color: #ffffff !important;
+  border-color: #ffc107 !important;
+  box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25) !important;
+  outline: none;
+}
+    </style>
+  </head>
+  <body class="bg-dark text-light">
+    <div class="container my-3 my-md-5">
+      <div class="row g-4">
+        <!-- ================= SIDEBAR (Profile & Social Links) ================= -->
+        <div class="col-12 col-lg-4 col-xl-3">
+          <div
+            class="card bg-surface border-secondary-subtle rounded-4 p-3 text-center sticky-lg-top"
+            style="top: 2rem; z-index: 1020"
+          >
+            <div class="avatar-box my-3 mx-auto">
+              <img
+                src="iyanupfp.jpg"
+                alt="Oladejo Iyanuoluwa Tobiloba"
+                class="img-fluid rounded-circle avatar-img shadow"
+                loading="lazy"
+              />
+            </div>
+
+            <h4 class="fw-bold mb-1 text-white">Oladejo Iyanuoluwa</h4>
+            <p
+              class="badge bg-surface-2 text-gold px-3 py-2 rounded-pill fw-normal fs-7 mb-3 d-inline-block"
+            >
+              Full-Stack & Systems Engineer
+            </p>
+
+            <hr class="border-secondary my-2" />
+
+            <!-- Contact Info List -->
+            <div class="text-start fs-7 py-2">
+              <div class="d-flex align-items-center mb-3">
+                <i
+                  class="bi bi-envelope-at text-gold fs-5 me-3 flex-shrink-0"
+                ></i>
+                <div class="overflow-hidden">
+                  <small class="text-subtle d-block">EMAIL</small>
+                  <a
+                    href="mailto:iyanuoluwoladejo171@gmail.com"
+                    class="text-light text-decoration-none text-truncate d-block"
+                    title="iyanuoluwoladejo171@gmail.com"
+                    >iyanuoluwoladejo171@gmail.com</a
+                  >
+                </div>
+              </div>
+
+              <!-- WhatsApp Link -->
+              <div class="d-flex align-items-center mb-3">
+                <i
+                  class="bi bi-whatsapp text-success fs-5 me-3 flex-shrink-0"
+                ></i>
+                <div>
+                  <small class="text-subtle d-block">WHATSAPP / PHONE</small>
+                  <a
+                    href="https://wa.me/2349152748628?text=Hello%20Iyanuoluwa,%20I%20reached%20out%20via%20your%20portfolio!"
+                    target="_blank"
+                    class="text-light text-decoration-none hover-gold"
+                  >
+                    +234 915 274 8628
+                    <i class="bi bi-box-arrow-up-right fs-8 ms-1"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center mb-3">
+                <i class="bi bi-geo-alt text-gold fs-5 me-3 flex-shrink-0"></i>
+                <div>
+                  <small class="text-subtle d-block">LOCATION</small>
+                  <span class="text-light">LAUTECH, Ogbomoso / Ibadan</span>
+                </div>
+              </div>
+            </div>
+
+            <hr class="border-secondary my-2" />
+
+            <!-- Social Handles -->
+            <div class="d-flex justify-content-center gap-3 pt-2">
+              <a
+                href="https://github.com"
+                target="_blank"
+                class="text-subtle hover-gold fs-5"
+                title="GitHub Profile"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                class="text-subtle hover-gold fs-5"
+                title="LinkedIn Profile"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a
+                href="https://wa.me/2349152748628"
+                target="_blank"
+                class="text-subtle hover-gold fs-5 text-success"
+                title="Direct WhatsApp Chat"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+              <a
+                href="https://x.com"
+                target="_blank"
+                class="text-subtle hover-gold fs-5"
+                title="X (Twitter) Profile"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= MAIN CONTENT ================= -->
+        <div class="col-12 col-lg-8 col-xl-9">
+          <div
+            class="card bg-surface border-secondary-subtle rounded-4 p-3 p-sm-4 p-md-5 position-relative"
+          >
+            <!-- Horizontal Navigation Bar -->
+            <div class="nav-container mb-4 overflow-x-auto pb-2">
+              <ul
+                class="nav nav-pills flex-nowrap justify-content-start justify-content-md-end bg-surface-2 p-2 rounded-4 min-w-max"
+                id="mainTab"
+                role="tablist"
+              >
+                <li class="nav-item">
+                  <button
+                    class="nav-link active text-nowrap rounded-3 px-3"
+                    id="about-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#about"
+                    type="button"
+                  >
+                    About
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button
+                    class="nav-link text-nowrap rounded-3 px-3"
+                    id="resume-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#resume"
+                    type="button"
+                  >
+                    Resume
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button
+                    class="nav-link text-nowrap rounded-3 px-3"
+                    id="portfolio-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#portfolio"
+                    type="button"
+                  >
+                    Portfolio
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button
+                    class="nav-link text-nowrap rounded-3 px-3"
+                    id="blog-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#blog"
+                    type="button"
+                  >
+                    Blog
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button
+                    class="nav-link text-nowrap rounded-3 px-3"
+                    id="contact-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#contact"
+                    type="button"
+                  >
+                    Contact
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Content Panes -->
+            <div class="tab-content" id="mainTabContent">
+              <!-- ABOUT TAB -->
+              <div class="tab-pane fade show active" id="about" role="tabpanel">
+                <h2 class="h3 fw-bold text-white mb-2">About Me</h2>
+                <div class="gold-line mb-4"></div>
+
+                <p class="text-subtle fs-6 lh-lg">
+                  I am a Software Engineer and Full-Stack Systems Developer
+                  based in Oyo State, Nigeria. Specializing in the
+                  <strong>MERN Stack (MongoDB, Express, React, Node.js)</strong
+                  >, <strong>TypeScript</strong>, <strong>Flutter</strong>, and
+                  <strong>Distributed Systems</strong>, I construct
+                  high-concurrency web apps, cross-platform mobile products, and
+                  scalable microservices.
+                </p>
+                <p class="text-subtle fs-6 lh-lg mb-4">
+                  My architectural focus centers around low-latency execution,
+                  clean code principles, typed safety, and real-time state
+                  synchronization using WebSockets, Redis, and event-driven
+                  architecture.
+                </p>
+
+                <!-- Services & Competencies -->
+                <h3 class="h5 fw-bold text-white mb-3">Core Competencies</h3>
+                <div class="row g-3 mb-4">
+                  <div class="col-12 col-md-6">
+                    <div class="card bg-surface-2 border-0 rounded-4 p-4 h-100">
+                      <div class="text-gold fs-2 mb-2">
+                        <i class="bi bi-diagram-3-fill"></i>
+                      </div>
+                      <h5 class="fw-bold text-white fs-6">
+                        Backend & Microservices
+                      </h5>
+                      <p class="text-subtle fs-7 mb-0">
+                        High-concurrency Node.js/Express APIs, gRPC, Redis
+                        caching layers, and WebSocket real-time pipelines.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="card bg-surface-2 border-0 rounded-4 p-4 h-100">
+                      <div class="text-gold fs-2 mb-2">
+                        <i class="bi bi-phone-vibration"></i>
+                      </div>
+                      <h5 class="fw-bold text-white fs-6">
+                        Flutter Mobile Engineering
+                      </h5>
+                      <p class="text-subtle fs-7 mb-0">
+                        Native-performing iOS and Android applications
+                        engineered with Dart, BLoC pattern, and local databases.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="card bg-surface-2 border-0 rounded-4 p-4 h-100">
+                      <div class="text-gold fs-2 mb-2">
+                        <i class="bi bi-currency-bitcoin"></i>
+                      </div>
+                      <h5 class="fw-bold text-white fs-6">
+                        Forex & Trading Engines
+                      </h5>
+                      <p class="text-subtle fs-7 mb-0">
+                        Real-time financial price streaming, automated bot
+                        execution, and secure crypto wallet integrations.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="card bg-surface-2 border-0 rounded-4 p-4 h-100">
+                      <div class="text-gold fs-2 mb-2">
+                        <i class="bi bi-cloud-check-fill"></i>
+                      </div>
+                      <h5 class="fw-bold text-white fs-6">
+                        DevOps & Database Design
+                      </h5>
+                      <p class="text-subtle fs-7 mb-0">
+                        Docker orchestration, PostgreSQL/MongoDB query
+                        optimization, CI/CD pipelines, and AWS deployment.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- RESUME TAB -->
+              <div class="tab-pane fade" id="resume" role="tabpanel">
+                <h2 class="h3 fw-bold text-white mb-2">Resume</h2>
+                <div class="gold-line mb-4"></div>
+
+                <!-- Education Section -->
+                <div class="mb-4">
+                  <h3 class="h5 fw-bold text-white mb-3">
+                    <i class="bi bi-mortarboard-fill text-gold me-2"></i
+                    >Education
+                  </h3>
+                  <div
+                    class="timeline-box border-start border-secondary ps-3 ms-2"
+                  >
+                    <div class="timeline-item position-relative mb-4">
+                      <span class="timeline-dot"></span>
+                      <h5 class="fw-bold text-white fs-6 mb-1">
+                        B.Tech. Food Science
+                      </h5>
+                      <small class="text-gold fw-medium d-block mb-2"
+                        >Ladoke Akintola University of Technology (LAUTECH),
+                        Ogbomoso (2020 — Present)</small
+                      >
+                      <p class="text-subtle fs-7">
+                        Focused on Distributed Systems, Software Architecture,
+                        Database Management, Algorithms & Data Structures, and
+                        Computer Networks. and Food analysis
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Work Experience Section -->
+                <div class="mb-4">
+                  <h3 class="h5 fw-bold text-white mb-3">
+                    <i class="bi bi-briefcase-fill text-gold me-2"></i
+                    >Professional Experience
+                  </h3>
+                  <div
+                    class="timeline-box border-start border-secondary ps-3 ms-2"
+                  >
+                    <div class="timeline-item position-relative mb-4">
+                      <span class="timeline-dot"></span>
+                      <h5 class="fw-bold text-white fs-6 mb-1">
+                        Lead Backend & Systems Engineer
+                      </h5>
+                      <small class="text-gold fw-medium d-block mb-2"
+                        >FinTech & Systems Agency (2024 — Present)</small
+                      >
+                      <ul class="text-subtle fs-7 ps-3 mb-0">
+                        <li>
+                          Designed Node.js microservices processing 100k+ daily
+                          transaction updates with 99.9% uptime.
+                        </li>
+                        <li>
+                          Implemented Redis Pub/Sub caching layers, reducing API
+                          endpoint latencies by over 40%.
+                        </li>
+                        <li>
+                          Architected RESTful and WebSocket API endpoints
+                          consumed by React and Flutter client applications.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="timeline-item position-relative mb-4">
+                      <span class="timeline-dot"></span>
+                      <h5 class="fw-bold text-white fs-6 mb-1">
+                        Mobile Application Engineer (Flutter & Dart)
+                      </h5>
+                      <small class="text-gold fw-medium d-block mb-2"
+                        >Software Solutions Ltd (2022 — 2024)</small
+                      >
+                      <ul class="text-subtle fs-7 ps-3 mb-0">
+                        <li>
+                          Delivered cross-platform Flutter applications for
+                          fintech and logistics enterprises.
+                        </li>
+                        <li>
+                          Integrated offline-first synchronization using Hive
+                          and SQLite local storage engines.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tech Stack Skills Progress -->
+                <div class="mt-4">
+                  <h3 class="h5 fw-bold text-white mb-3">Technical Skills</h3>
+                  <div class="card bg-surface-2 border-0 rounded-4 p-4">
+                    <div class="mb-3">
+                      <div class="d-flex justify-content-between fs-7 mb-1">
+                        <span class="text-white fw-medium"
+                          >Node.js, Express & TypeScript Backend</span
+                        >
+                        <span class="text-gold">95%</span>
+                      </div>
+                      <div class="progress bg-dark" style="height: 6px">
+                        <div
+                          class="progress-bar bg-gold"
+                          style="width: 95%"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <div class="d-flex justify-content-between fs-7 mb-1">
+                        <span class="text-white fw-medium"
+                          >React.js & Front-End Web Architecture</span
+                        >
+                        <span class="text-gold">90%</span>
+                      </div>
+                      <div class="progress bg-dark" style="height: 6px">
+                        <div
+                          class="progress-bar bg-gold"
+                          style="width: 90%"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <div class="d-flex justify-content-between fs-7 mb-1">
+                        <span class="text-white fw-medium"
+                          >Flutter & Cross-Platform Mobile</span
+                        >
+                        <span class="text-gold">88%</span>
+                      </div>
+                      <div class="progress bg-dark" style="height: 6px">
+                        <div
+                          class="progress-bar bg-gold"
+                          style="width: 88%"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="mb-0">
+                      <div class="d-flex justify-content-between fs-7 mb-1">
+                        <span class="text-white fw-medium"
+                          >MongoDB, Redis & PostgreSQL Optimization</span
+                        >
+                        <span class="text-gold">87%</span>
+                      </div>
+                      <div class="progress bg-dark" style="height: 6px">
+                        <div
+                          class="progress-bar bg-gold"
+                          style="width: 87%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PORTFOLIO TAB (8 Expanded Projects) -->
+              <div class="tab-pane fade" id="portfolio" role="tabpanel">
+                <h2 class="h3 fw-bold text-white mb-2">Featured Projects</h2>
+                <div class="gold-line mb-4"></div>
+
+                <div class="row g-4">
+                  <!-- Project 1 -->
+                  <div class="col-12 col-md-6">
+                    <div
+                      class="card bg-surface-2 border-0 rounded-4 overflow-hidden h-100 shadow-sm"
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top project-card-img"
+                        alt="FxMatrix Trading Platform"
+                        loading="lazy"
+                      />
+                      <div class="card-body p-4">
+                        <div class="mb-2">
+                          <span class="tech-pill">Node.js</span>
+                          <span class="tech-pill">WebSockets</span>
+                          <span class="tech-pill">React</span>
+                        </div>
+                        <h5 class="fw-bold text-white fs-6">
+                          FxMatrix Forex Engine
+                        </h5>
+                        <p class="text-subtle fs-7 mb-0">
+                          High-frequency Forex execution portal streaming live
+                          ticks and order book updates.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Project 2 -->
+                  <div class="col-12 col-md-6">
+                    <div
+                      class="card bg-surface-2 border-0 rounded-4 overflow-hidden h-100 shadow-sm"
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top project-card-img"
+                        alt="KryptoVault Wallet App"
+                        loading="lazy"
+                      />
+                      <div class="card-body p-4">
+                        <div class="mb-2">
+                          <span class="tech-pill">Flutter</span>
+                          <span class="tech-pill">Dart</span>
+                          <span class="tech-pill">Biometrics</span>
+                        </div>
+                        <h5 class="fw-bold text-white fs-6">
+                          KryptoVault Mobile Wallet
+                        </h5>
+                        <p class="text-subtle fs-7 mb-0">
+                          Cross-platform crypto wallet with biometric protection
+                          and multi-chain tracking.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Project 3 -->
+                  <div class="col-12 col-md-6">
+                    <div
+                      class="card bg-surface-2 border-0 rounded-4 overflow-hidden h-100 shadow-sm"
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top project-card-img"
+                        alt="NodeLogistics Fleet API"
+                        loading="lazy"
+                      />
+                      <div class="card-body p-4">
+                        <div class="mb-2">
+                          <span class="tech-pill">Express</span>
+                          <span class="tech-pill">PostgreSQL</span>
+                          <span class="tech-pill">Redis</span>
+                        </div>
+                        <h5 class="fw-bold text-white fs-6">
+                          NodeLogistics Microservice
+                        </h5>
+                        <p class="text-subtle fs-7 mb-0">
+                          Route tracking REST engine servicing commercial
+                          transit and freight fleets.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Project 4: AgriCommerce Platform (Updated Image) -->
+                  <div class="col-12 col-md-6">
+                    <div
+                      class="card bg-surface-2 border-0 rounded-4 overflow-hidden h-100 shadow-sm"
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top project-card-img"
+                        alt="AgriCommerce Market Hub"
+                        loading="lazy"
+                      />
+                      <div class="card-body p-4">
+                        <div class="mb-2">
+                          <span class="tech-pill">MERN Stack</span>
+                          <span class="tech-pill">Tailwind</span>
+                          <span class="tech-pill">Geolocation</span>
+                        </div>
+                        <h5 class="fw-bold text-white fs-6">
+                          AgriCommerce Marketplace
+                        </h5>
+                        <p class="text-subtle fs-7 mb-0">
+                          Direct farm produce marketplace connecting
+                          agricultural growers with wholesale distribution
+                          networks.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Project 5: PaySwift Payment Gateway (Updated Image) -->
+                  <div class="col-12 col-md-6">
+                    <div
+                      class="card bg-surface-2 border-0 rounded-4 overflow-hidden h-100 shadow-sm"
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top project-card-img"
+                        alt="PaySwift Gateway"
+                        loading="lazy"
+                      />
+                      <div class="card-body p-4">
+                        <div class="mb-2">
+                          <span class="tech-pill">TypeScript</span>
+                          <span class="tech-pill">Docker</span>
+                          <span class="tech-pill">Webhooks</span>
+                        </div>
+                        <h5 class="fw-bold text-white fs-6">
+                          PaySwift Payment Gateway
+                        </h5>
+                        <p class="text-subtle fs-7 mb-0">
+                          High-concurrency merchant checkout gateway handling
+                          multi-currency processing and real-time ledger sync.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Project 6 -->
+                  <div class="col-12 col-md-6">
+                    <div
+                      class="card bg-surface-2 border-0 rounded-4 overflow-hidden h-100 shadow-sm"
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top project-card-img"
+                        alt="SaaS Metrics Analytics"
+                        loading="lazy"
+                      />
+                      <div class="card-body p-4">
+                        <div class="mb-2">
+                          <span class="tech-pill">React</span>
+                          <span class="tech-pill">Chart.js</span>
+                          <span class="tech-pill">MongoDB</span>
+                        </div>
+                        <h5 class="fw-bold text-white fs-6">
+                          SaaS Analytics Engine
+                        </h5>
+                        <p class="text-subtle fs-7 mb-0">
+                          Real-time revenue monitoring, MRR breakdown, and user
+                          churn analytics dashboard.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Project 7 -->
+                  <div class="col-12 col-md-6">
+                    <div
+                      class="card bg-surface-2 border-0 rounded-4 overflow-hidden h-100 shadow-sm"
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top project-card-img"
+                        alt="IoT Sensor Stream"
+                        loading="lazy"
+                      />
+                      <div class="card-body p-4">
+                        <div class="mb-2">
+                          <span class="tech-pill">MQTT</span>
+                          <span class="tech-pill">Node.js</span>
+                          <span class="tech-pill">TimeScaleDB</span>
+                        </div>
+                        <h5 class="fw-bold text-white fs-6">
+                          IoT Telemetry Hub
+                        </h5>
+                        <p class="text-subtle fs-7 mb-0">
+                          Time-series data ingestion server processing telemetry
+                          from remote sensors.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Project 8 -->
+                  <div class="col-12 col-md-6">
+                    <div
+                      class="card bg-surface-2 border-0 rounded-4 overflow-hidden h-100 shadow-sm"
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top project-card-img"
+                        alt="HealthConnect Mobile App"
+                        loading="lazy"
+                      />
+                      <div class="card-body p-4">
+                        <div class="mb-2">
+                          <span class="tech-pill">Flutter</span>
+                          <span class="tech-pill">Firebase</span>
+                          <span class="tech-pill">WebRTC</span>
+                        </div>
+                        <h5 class="fw-bold text-white fs-6">
+                          HealthConnect Telemedicine
+                        </h5>
+                        <p class="text-subtle fs-7 mb-0">
+                          Mobile app connecting patients with doctors for
+                          real-time video consultations.
+                        </p>
+                      </div>
+
+                      <!-- Project 9: AI Food Analysis & Quality Testing Platform -->
+                      <div class="col-12 col-md-6">
+                        <div
+                          class="card bg-surface-2 border-0 rounded-4 overflow-hidden h-100 shadow-sm"
+                        >
+                          <img
+                            src="https://images.unsplash.com/photo-1516594798947-e65505dbb29d?auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top project-card-img"
+                            alt="Food Analysis & Quality Platform"
+                            loading="lazy"
+                          />
+                          <div class="card-body p-4">
+                            <div class="mb-2">
+                              <span class="tech-pill">Python</span>
+                              <span class="tech-pill">Node.js</span>
+                              <span class="tech-pill">Computer Vision</span>
+                            </div>
+                            <h5 class="fw-bold text-white fs-6">
+                              NutriScan Food & Produce Analysis
+                            </h5>
+                            <p class="text-subtle fs-7 mb-0">
+                              AI-driven inspection engine testing crop quality,
+                              freshness metrics, and automated nutritional
+                              breakdown.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- BLOG TAB (4 Articles) -->
+              <div class="tab-pane fade" id="blog" role="tabpanel">
+                <h2 class="h3 fw-bold text-white mb-2">Technical Articles</h2>
+                <div class="gold-line mb-4"></div>
+
+                <div class="row g-4">
+                  <div class="col-12 col-md-6">
+                    <div
+                      class="card bg-surface-2 border-0 rounded-4 overflow-hidden h-100 shadow-sm"
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top project-card-img"
+                        alt="Node.js Code"
+                        loading="lazy"
+                      />
+                      <div class="card-body p-4">
+                        <small class="text-gold fs-7 mb-1 d-block"
+                          >Backend • Oct 2026</small
+                        >
+                        <h5 class="fw-bold text-white fs-6">
+                          Low-Latency Microservices with Node.js & Redis
+                        </h5>
+                        <p class="text-subtle fs-7 mb-0">
+                          Optimizing event loops and Redis Pub/Sub for
+                          high-throughput live data streams.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <div
+                      class="card bg-surface-2 border-0 rounded-4 overflow-hidden h-100 shadow-sm"
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top project-card-img"
+                        alt="Flutter Mobile Layout"
+                        loading="lazy"
+                      />
+                      <div class="card-body p-4">
+                        <small class="text-gold fs-7 mb-1 d-block"
+                          >Flutter • Sep 2026</small
+                        >
+                        <h5 class="fw-bold text-white fs-6">
+                          Enterprise Flutter Apps with BLoC Architecture
+                        </h5>
+                        <p class="text-subtle fs-7 mb-0">
+                          Clean state management patterns for reactive
+                          cross-platform mobile apps.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <div
+                      class="card bg-surface-2 border-0 rounded-4 overflow-hidden h-100 shadow-sm"
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top project-card-img"
+                        alt="Database Queries"
+                        loading="lazy"
+                      />
+                      <div class="card-body p-4">
+                        <small class="text-gold fs-7 mb-1 d-block"
+                          >Databases • Aug 2026</small
+                        >
+                        <h5 class="fw-bold text-white fs-6">
+                          Mastering MongoDB Indexing & Query Profiling
+                        </h5>
+                        <p class="text-subtle fs-7 mb-0">
+                          Eliminating query bottlenecks and optimizing compound
+                          indexes for fast lookups.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <div
+                      class="card bg-surface-2 border-0 rounded-4 overflow-hidden h-100 shadow-sm"
+                    >
+                      <img
+                        src="https://images.unsplash.com/photo-1618401471353-b98aedd04e11?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top project-card-img"
+                        alt="DevOps CI/CD"
+                        loading="lazy"
+                      />
+                      <div class="card-body p-4">
+                        <small class="text-gold fs-7 mb-1 d-block"
+                          >DevOps • Jul 2026</small
+                        >
+                        <h5 class="fw-bold text-white fs-6">
+                          Automated CI/CD Pipelines with GitHub Actions
+                        </h5>
+                        <p class="text-subtle fs-7 mb-0">
+                          Containerizing applications with Docker and automating
+                          production deployments.
+                        </p>
+
+                        <!-- Blog Post 5 -->
+                        <div class="col-12 col-md-6">
+                          <div
+                            class="card bg-surface-2 border-0 rounded-4 overflow-hidden h-100 shadow-sm"
+                          >
+                            <img
+                              src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80"
+                              class="card-img-top project-card-img"
+                              alt="Cybersecurity & Encryption"
+                              loading="lazy"
+                            />
+                            <div class="card-body p-4">
+                              <small class="text-gold fs-7 mb-1 d-block"
+                                >Security • Jun 2026</small
+                              >
+                              <h5 class="fw-bold text-white fs-6">
+                                Securing Node.js REST APIs with JWT & OAuth2
+                              </h5>
+                              <p class="text-subtle fs-7 mb-0">
+                                Implementing zero-trust security layers, token
+                                rotation, and rate-limiting middleware.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Blog Post 6 -->
+                        <div class="col-12 col-md-6">
+                          <div
+                            class="card bg-surface-2 border-0 rounded-4 overflow-hidden h-100 shadow-sm"
+                          >
+                            <img
+                              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80"
+                              class="card-img-top project-card-img"
+                              alt="Data Analytics & Dashboards"
+                              loading="lazy"
+                            />
+                            <div class="card-body p-4">
+                              <small class="text-gold fs-7 mb-1 d-block"
+                                >Data • May 2026</small
+                              >
+                              <h5 class="fw-bold text-white fs-6">
+                                Real-Time Analytics Processing with WebSockets
+                              </h5>
+                              <p class="text-subtle fs-7 mb-0">
+                                Building ultra-fast live streaming dashboards
+                                using React and Node.js event emitters.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Blog Post 7 -->
+                        <div class="col-12 col-md-6">
+                          <div
+                            class="card bg-surface-2 border-0 rounded-4 overflow-hidden h-100 shadow-sm"
+                          >
+                            <img
+                              src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=600&q=80"
+                              class="card-img-top project-card-img"
+                              alt="Python & Machine Learning"
+                              loading="lazy"
+                            />
+                            <div class="card-body p-4">
+                              <small class="text-gold fs-7 mb-1 d-block"
+                                >AI & ML • Apr 2026</small
+                              >
+                              <h5 class="fw-bold text-white fs-6">
+                                Integrating LLMs & AI Workflows into MERN Stack
+                              </h5>
+                              <p class="text-subtle fs-7 mb-0">
+                                Connecting OpenAI & Gemini API embeddings
+                                directly to your Express.js backend services.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Blog Post 8 -->
+                        <div class="col-12 col-md-6">
+                          <div
+                            class="card bg-surface-2 border-0 rounded-4 overflow-hidden h-100 shadow-sm"
+                          >
+                            <img
+                              src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80"
+                              class="card-img-top project-card-img"
+                              alt="Web Design & Frontend"
+                              loading="lazy"
+                            />
+                            <div class="card-body p-4">
+                              <small class="text-gold fs-7 mb-1 d-block"
+                                >Frontend • Mar 2026</small
+                              >
+                              <h5 class="fw-bold text-white fs-6">
+                                Optimizing Web Vitals & React Rendering
+                                Performance
+                              </h5>
+                              <p class="text-subtle fs-7 mb-0">
+                                Practical techniques for reducing bundle size
+                                and eliminating unnecessary re-renders.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CONTACT TAB (LAUTECH Library Pinpoint Map & WhatsApp Integration) -->
+              <div class="tab-pane fade" id="contact" role="tabpanel">
+                <h2 class="h3 fw-bold text-white mb-2">Get In Touch</h2>
+                <div class="gold-line mb-4"></div>
+
+                <!-- Pinpoint Google Map to LAUTECH Library, Ogbomoso -->
+                <div
+                  class="map-responsive mb-4 rounded-4 border border-secondary-subtle"
+                >
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.669641773099!2d4.270381675880479!3d8.135071191895188!2m3!1f0!0f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10370d0615fb3eb3%3A0x7d6f5f3e49e0c52d!2sLAUTECH%20Library%2C%20Ogbomoso!5e0!3m2!1sen!2sng!4v1710000000000!5m2!1sen!2sng"
+                    style="
+                      border: 0;
+                      filter: grayscale(80%) invert(90%) contrast(120%);
+                    "
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="LAUTECH Library Location Map"
+                  >
+                  </iframe>
+                </div>
+
+                <!-- Quick Contact Callout Bar -->
+                <div class="card bg-surface-2 border-0 rounded-4 p-3 mb-4">
+                  <div
+                    class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2"
+                  >
+                    <div>
+                      <span class="text-white fw-bold d-block"
+                        ><i class="bi bi-chat-dots text-gold me-2"></i>Prefer
+                        Instant Messaging?</span
+                      >
+                      <small class="text-subtle"
+                        >Chat directly on WhatsApp for immediate
+                        feedback.</small
+                      >
+                    </div>
+                    <a
+                      href="https://wa.me/2349152748628?text=Hello%20Iyanuoluwa,%20I'd%20like%20to%20discuss%20a%20project."
+                      target="_blank"
+                      class="btn btn-success text-white px-4 py-2 rounded-3 text-nowrap fs-7"
+                    >
+                      <i class="bi bi-whatsapp me-2"></i>Open WhatsApp
+                    </a>
+                  </div>
+                </div>
+
+              <!-- CONTACT TAB FORM (High Contrast & Accessible) -->
+<h3 class="h5 fw-bold text-white mb-3">Send a Message</h3>
+<form action="mailto:iyanuoluwoladejo171@gmail.com" method="post" enctype="text/plain">
+  <div class="row g-3">
+    <div class="col-12 col-md-6">
+      <label for="fullName" class="form-label text-light fw-medium fs-7 mb-1">Full Name</label>
+      <input 
+        type="text" 
+        id="fullName"
+        class="form-control form-control-contrast rounded-3 p-3" 
+        placeholder="e.g. John Doe" 
+        required
+      >
+    </div>
+    
+    <div class="col-12 col-md-6">
+      <label for="emailAddress" class="form-label text-light fw-medium fs-7 mb-1">Email Address</label>
+      <input 
+        type="email" 
+        id="emailAddress"
+        class="form-control form-control-contrast rounded-3 p-3" 
+        placeholder="e.g. john@example.com" 
+        required
+      >
+    </div>
+    
+    <div class="col-12">
+      <label for="subject" class="form-label text-light fw-medium fs-7 mb-1">Subject</label>
+      <input 
+        type="text" 
+        id="subject"
+        class="form-control form-control-contrast rounded-3 p-3" 
+        placeholder="Project Inquiry / Systems Development" 
+        required
+      >
+    </div>
+    
+    <div class="col-12">
+      <label for="message" class="form-label text-light fw-medium fs-7 mb-1">Message Details</label>
+      <textarea 
+        id="message"
+        class="form-control form-control-contrast rounded-3 p-3" 
+        rows="4" 
+        placeholder="Describe your project, timelines, or key requirements..." 
+        required
+      ></textarea>
+    </div>
+    
+    <div class="col-12 text-end pt-2">
+      <button type="submit" class="btn btn-gold rounded-3 px-4 py-3 fw-bold w-100 w-sm-auto shadow-sm">
+        <i class="bi bi-send-fill me-2"></i>Send Message
+      </button>
+    </div>
+  </div>
+</form>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
